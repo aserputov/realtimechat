@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>Register</h1>
+      <form action="/reg" method="POST">
+        <label for="username">Username:</label><br />
+        <input type="text" id="username" name="username" /><br />
+        <label for="password">Password:</label><br />
+        <input type="password" id="password" name="password" /><br />
+        <label for="confirm-password">Confirm Password:</label><br />
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+        /><br /><br />
+        <button type="submit" id="reg">Register</button>
+      </form>
+    </div>
+    <br />
+    <div>
+      <h1>Sign In</h1>
+      <form action="http://localhost:3000/ins" method="POST">
+        <label for="user">Username:</label><br />
+        <input type="text" id="user" name="user" /><br />
+        <label for="pass">Password:</label><br />
+        <input type="password" id="pass" name="pass" /><br />
+        <br />
+        <button type="submit" id="sign">Sign In</button>
+      </form>
+    </div>
+  </body>
+  <script>
+    const b1 = document.getElementById("reg");
+    const b2 = document.getElementById("sign");
+    b1.addEventListener("submit", () => {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+      const options = {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          username: username,
+          password: password,
+        }).toString(),
+      };
+      fetch("http://localhost:3000/reg", options)
+        .then((response) => {
+          if (response.status === 200) {
+            alert("Registration successful");
+          }
+          response.json();
+        })
+        .then((result) => {})
+        .catch((error) => {
+          console.error(error);
+        });
+    });
+
+    b2.addEventListener("submit", () => {
+      const user = document.getElementById("user").value;
+      const pass = document.getElementById("pass").value;
+      console.log(user, pass);
+      const options = {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          user: user,
+          pass: pass,
+        }).toString(),
+      };
+      fetch("http://localhost:3000/ins", options)
+        .then((response) => {
+          if (response.status === 200) {
+            alert("Sign in successful");
+          }
+          response.json();
+        })
+        .then((result) => {})
+        .catch((error) => {
+          console.error(error);
+        });
+    });
+  </script>
+</html>

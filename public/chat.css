@@ -1,0 +1,23 @@
+#container {
+    width: 25%;
+    float: left;
+    /* border: 1px solid #000; */
+}
+
+.chats {
+    cursor: pointer;
+    border-bottom: 1px solid #000;
+    height: 5vh;
+}
+
+#display {
+    width: 75%;
+    height: 40vh;
+    float: right;
+    border: 1px solid #000;
+}
+#chat{
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}

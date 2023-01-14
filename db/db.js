@@ -7,13 +7,10 @@ const userSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now },
 });
 
-mongoose.connect(
-  "mongodb+srv://serputov:serputov@cluster0.ygg93tm.mongodb.net/?retryWrites=true&w=majority",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-);
+mongoose.connect("PROCESS.ENV.MONGODB_URI", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 const User = mongoose.model("User", userSchema);
 

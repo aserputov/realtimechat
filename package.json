@@ -1,0 +1,24 @@
+{
+  "name": "telegram3.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon websocketServer.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "client-sessions": "^0.8.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "kafka-node": "^5.0.0",
+    "mongoose": "^6.8.3",
+    "nodemon": "^2.0.20",
+    "ws": "^8.12.0"
+  }
+}

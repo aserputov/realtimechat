@@ -36,56 +36,5 @@
       </form>
     </div>
   </body>
-  <script>
-    const b1 = document.getElementById("reg");
-    const b2 = document.getElementById("sign");
-    b1.addEventListener("submit", () => {
-      const username = document.getElementById("username").value;
-      const password = document.getElementById("password").value;
-      const options = {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({
-          username: username,
-          password: password,
-        }).toString(),
-      };
-      fetch("http://localhost:3000/reg", options)
-        .then((response) => {
-          if (response.status === 200) {
-            alert("Registration successful");
-          }
-          response.json();
-        })
-        .then((result) => {})
-        .catch((error) => {
-          console.error(error);
-        });
-    });
-
-    b2.addEventListener("submit", () => {
-      const user = document.getElementById("user").value;
-      const pass = document.getElementById("pass").value;
-      console.log(user, pass);
-      const options = {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({
-          user: user,
-          pass: pass,
-        }).toString(),
-      };
-      fetch("http://localhost:3000/ins", options)
-        .then((response) => {
-          if (response.status === 200) {
-            alert("Sign in successful");
-          }
-          response.json();
-        })
-        .then((result) => {})
-        .catch((error) => {
-          console.error(error);
-        });
-    });
-  </script>
+  <script src="mainclient.js"></script>
 </html>

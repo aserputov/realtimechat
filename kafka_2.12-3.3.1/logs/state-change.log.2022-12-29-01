@@ -1,2 +1,0 @@
-[2022-12-29 01:32:20,641] INFO [Broker id=1] Transitioning 1 partition(s) to local followers. (state.change.logger)
-[2022-12-29 01:32:20,749] INFO [Broker id=1] Transitioning 1 partition(s) to local followers. (state.change.logger)

@@ -1,3 +1,0 @@
-[2022-12-28 22:22:18,427] INFO [Broker id=1] Transitioning 1 partition(s) to local leaders. (state.change.logger)
-[2022-12-28 22:22:18,451] INFO [Broker id=1] Creating new partition events-0 with topic id ZifrlbdlRKeYRFd4ZulJeA. (state.change.logger)
-[2022-12-28 22:22:18,488] INFO [Broker id=1] Leader events-0 with topic id Some(ZifrlbdlRKeYRFd4ZulJeA) starts at leader epoch 0 from offset 0 with partition epoch 0, high watermark 0, ISR [1], adding replicas [] and removing replicas []. Previous leader epoch was -1. (state.change.logger)

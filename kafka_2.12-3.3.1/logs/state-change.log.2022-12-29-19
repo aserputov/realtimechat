@@ -1,7 +1,0 @@
-[2022-12-29 19:54:35,038] INFO [Broker id=1] Transitioning 1 partition(s) to local followers. (state.change.logger)
-[2022-12-29 19:54:35,041] INFO [Broker id=1] Creating new partition events-0 with topic id ZifrlbdlRKeYRFd4ZulJeA. (state.change.logger)
-[2022-12-29 19:54:35,048] INFO [Broker id=1] Follower events-0 starts at leader epoch 2 from offset 11383 with partition epoch 2 and high watermark 11383. Current leader is -1. Previous leader epoch was -1. (state.change.logger)
-[2022-12-29 19:54:35,049] INFO [Broker id=1] Stopped fetchers as part of become-follower for 1 partitions (state.change.logger)
-[2022-12-29 19:54:35,051] INFO [Broker id=1] Started fetchers as part of become-follower for 1 partitions (state.change.logger)
-[2022-12-29 19:54:35,121] INFO [Broker id=1] Transitioning 1 partition(s) to local leaders. (state.change.logger)
-[2022-12-29 19:54:35,156] INFO [Broker id=1] Leader events-0 with topic id Some(ZifrlbdlRKeYRFd4ZulJeA) starts at leader epoch 3 from offset 11383 with partition epoch 3, high watermark 11383, ISR [1], adding replicas [] and removing replicas []. Previous leader epoch was 2. (state.change.logger)

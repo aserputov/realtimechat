@@ -1,2 +1,4 @@
-# realtimechat
-Kafka. Express. WebSockets.
+# realtime-chat.
+Kafka. Topics. Express. WebSockets.
+
+
